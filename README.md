@@ -6,9 +6,9 @@
 ## Features
 
 ### User Roles:
-  Organizers: 
+* Organizers: 
     Create, update, delete, and manage events.
-  Participants: 
+* Participants: 
     View events, register, and manage their event registrations.
 
 ### Organizers: 
@@ -23,13 +23,13 @@
   and manage their event registrations.
 
 ### Authentication & Security:
-  Secure user login and registration.
-  Role-based access control to ensure only authorized actions.
+  * Secure user login and registration.
+  * Role-based access control to ensure only authorized actions.
 
 ### Database Integration:
   Persistent storage of users, events, and registrations using a relational database.
 
 ### Technologies Used
-  Backend: Spring Boot, Spring Data JPA, Spring Security, Spring Oauth2
-  Database: MySQL
-  Build Tool: Maven
+  * Backend: Spring Boot, Spring Data JPA, Spring Security, Spring Oauth2
+  * Database: MySQL
+  * Build Tool: Maven
