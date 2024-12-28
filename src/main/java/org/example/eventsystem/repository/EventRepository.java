@@ -9,11 +9,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface EventRepository extends JpaRepository<Event,String> {
+public interface EventRepository extends JpaRepository<Event, String> {
 
     Optional<List<Event>> findEventsByCategory(Category category);
+
     Optional<Event> findByTitle(String title);
-    Optional<Event> findById(String id);
+
     void deleteById(String id);
 
 }

@@ -8,23 +8,27 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name = "events")
 public class Event {
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Column(updatable = false, nullable = false)
     private String id;
-    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
-    @Column(name = "event_time")
+    @Column(name = "event_time", nullable = false)
     private String eventTime;
     @Enumerated(EnumType.STRING)
     private Category category;
-    @Column(name = "total_seats")
+    @Column(name = "total_seats", nullable = false)
     private int totalSeats;
-    @Column(name = "available_seats")
+    @Column(name = "available_seats", nullable = false)
     private int availableSeats;
     @ManyToOne
     private User admin;
 
     public Event() {
+    }
+
+    public String getId() {
+        return id;
     }
 }
