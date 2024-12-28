@@ -14,8 +14,8 @@ public class Event {
     private String id;
     @Column(name = "title")
     private String title;
-    @Column(name = "date_time")
-    private String dateTime;
+    @Column(name = "event_time")
+    private String eventTime;
     @Enumerated(EnumType.STRING)
     private Category category;
     @Column(name = "total_seats")
